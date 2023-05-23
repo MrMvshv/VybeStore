@@ -1,34 +1,35 @@
 # VybeStore
 Portfolio Project (ALX)
 
-#VybeStore
+# VybeStore
+
 A web application that allows users to create and share custom playlists of songs and stream live performances of artists, producers, DJs etc.
 
-##Team
+## Team
 Irungu Macharia Josphat - MrMvshv on GitHub : Primary developer and founder
 
-##Technologies
-###Languages:
+## Technologies
+### Languages:
 Python
 JavaScript
 HTML, CSS and JavaScript
-####Front-end:
+#### Front-end:
 HTML, CSS and JavaScript
 React
-####Back-end:
+#### Back-end:
 Node.js or Django
 Various streaming services’ API e.g Spotify
 OAuth2 for authentication
 WebSockets or WebRTC for livestreaming
 
 
-###Node.js vs Django:
+### Node.js vs Django:
 Django is preferred because of its speed and efficiency and friendly learning curve, however as the app may need advanced customization, node.js may be more appropriate for use.
 
-###WebSockets or WebRTC:
+### WebSockets or WebRTC:
 Since the primary application is to stream audio and possibly video, webRTC is preferred since it is designed specifically for similar purposes. WebSockets may be implemented for use in live chatting and similar features.
 
-##Challenge
+## Challenge
 The goal of this project is to build a web application that allows users to create and share custom playlists of songs and stream live performances.
 The application will be developed using modern web technologies and will leverage popular music streaming services to access and play songs within the platform.
 The application will provide user authentication and authorization, as well as social features such as liking and commenting on playlists and following other users.
@@ -39,8 +40,8 @@ Targeted users are all music enthusiasts and practitioners in all levels of the 
 
 This project is relevant to music lovers of all demographics and locales.
 
-##Risks:
-###Technical Risks and Safeguards:
+## Risks:
+### Technical Risks and Safeguards:
 
 Integration with the Music Streaming Service API: There is a risk of the music streaming service's API being changed or updated, which could cause issues with the application's functionality. To mitigate this risk, the development team can continuously monitor the API and make necessary updates to the application's code to maintain compatibility.
 
@@ -48,7 +49,7 @@ Live Streaming Stability: The live streaming feature is dependent on real-time c
 
 Security Risks: User authentication and authorization and sensitive user data such as login credentials are essential components of the application. To mitigate the risk of security breaches, the development team can implement industry-standard security measures, such as encrypting sensitive data, using secure communication protocols, and regularly updating and patching the application.
 
-###Non-Technical Risks and Strategies:
+### Non-Technical Risks and Strategies:
 
 Intellectual Property Rights: There is a risk of violating intellectual property rights when using music from the streaming service. The development team can mitigate this risk by obtaining the necessary licenses and permissions from the music streaming service and adhering to their terms and conditions.
 
@@ -56,11 +57,11 @@ Legal Liability: The application could potentially be held liable for copyright 
 
 Reputation Risks: Negative user experiences or negative publicity could harm the application's reputation. To mitigate this risk, the development team can implement measures to ensure a high-quality user experience, such as user testing and feedback mechanisms, and implementing measures to address user complaints or issues. Additionally, the team can actively monitor social media and other channels for negative feedback and respond promptly to any issues that arise.
 
-##Infrastructure:
+## Infrastructure:
 In the beginning, the technical team consists of one person: me. However, any new unverified updates will be done in a new branch which will be merged with master using pull requests done by volunteer collaborators.
 Data will be obtained from a small dataset of songs from the various platforms.
 
-##Existing Solutions:
+## Existing Solutions:
 
 The existing music sharing platforms such as spotify offer some of the above functionality such as personalized playlist creation based on user preferences. The proposed project differs from the existing solutions in that the functionality is highly human-generated and curated, thus has the potential to be more accurate than existing AI solutions out there.
 
