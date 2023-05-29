@@ -1,0 +1,21 @@
+.search-bar {
+    align-items: center;
+  }
+  
+  .search-bar input {
+    height: 30px;
+    width: 300px;
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+  }
+  
+  .search-bar button {
+    height: 30px;
+    width: 40px;
+    margin-left: 5px;
+  }
+  
+  .search-bar button i {
+    background-color: rgb(168, 54, 54);
+  }
