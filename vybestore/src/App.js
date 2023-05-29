@@ -11,7 +11,6 @@ function App() {
 	  <Header />
 	  <Playlists />
 	  <Footer />
-	  <h1>Mvshv Go</h1>
     </div>
   );
 }

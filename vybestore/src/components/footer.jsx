@@ -3,7 +3,11 @@ import './footer.css'
 
 const Footer = () => {
 	return (
-		<div className='footer'>footer</div>
+		<footer>
+  			<div className="footerContainer">
+    			<p>2023 VybeStore. All rights reserved.</p>
+  			</div>
+		</footer>
 	)
 }
 
