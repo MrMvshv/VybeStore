@@ -2,6 +2,7 @@
     background-color: #282c34;
     min-height: fit-content;
     display: flex;
+    justify-content: space-between;
     padding: 15px;
     font-size: calc(10px + 2vmin);
     color: white;
