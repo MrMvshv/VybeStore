@@ -1,9 +1,9 @@
 footer {
 	background-color: #f0f0f0;
   	color: #555;
-  	position: fixed;
   	left: 0;
   	bottom: 0;
+	position: fixed;
   	width: 100%;
 }
 

@@ -14,15 +14,19 @@ function Search({ onSearchResults }) {
 	
 	return (
 			<div className="search-bar">
-				<input
-				  type="text"
-				  placeholder="Search"
-				  value={searchTerm}
-				  onChange={handleInputChange}
-				/>
-      			<button type="submit" onClick={handleSearch}>
-        			<i className="fa fa-search"></i>
-      			</button>
+				<h4>Search for a playlist or song</h4>
+				<p>Click on the checkbox to mark an item</p>
+				<div className='searchbox'>
+					<input
+					type="text"
+					placeholder="Search"
+					value={searchTerm}
+					onChange={handleInputChange}
+					/>
+					<button type="submit" onClick={handleSearch}>
+						<i className="fa fa-search"></i>
+					</button>
+				</div>
     		</div>
 	)
 }

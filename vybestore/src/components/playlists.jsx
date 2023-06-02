@@ -6,10 +6,10 @@ function Playlists({ searchResults }) {
 	return (
 	  <div className="playlists">
 		{searchResults.map((result) => (
-		  <div key={result.id.videoId}>
-			<h5>Title:{result.snippet.title}</h5>
-			<h7>Channel:{result.snippet.channelTitle}</h7>
-			<p>Description:{result.snippet.description}</p>
+		  <div className="result-item" key={result.id.videoId}>
+			<h5 className='result-title'>Title:{result.snippet.title}</h5>
+			<h7 className='result-channel'>Channel:{result.snippet.channelTitle}</h7>
+			<p className='result-desc'>Description:{result.snippet.description}</p>
 		  </div>
 		))}
 	  </div>

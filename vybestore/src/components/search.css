@@ -1,8 +1,24 @@
 .search-bar {
-    align-items: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
   }
-  
-  .search-bar input {
+
+.search-bar h4 {
+  padding: 5px;
+  margin: 2px;
+}
+
+.search-bar p {
+  padding: 5px;
+  margin: 2px;
+}
+
+.searchbox {
+  display: flex;
+}
+
+.searchbox input {
     height: 30px;
     width: 300px;
     padding: 5px;
@@ -10,12 +26,13 @@
     border: none;
   }
   
-  .search-bar button {
+.searchbox button {
+    align-self: center;
     height: 30px;
     width: 40px;
     margin-left: 5px;
   }
   
-  .search-bar button i {
+.searchbox button i {
     background-color: rgb(168, 54, 54);
   }
