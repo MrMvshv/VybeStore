@@ -3,12 +3,13 @@ import './App.css';
 import Header from './components/header';
 import Playlists from './components/playlists';
 import Footer from './components/footer';
+//import SearchResult from './components/searchResult'; 
 import Search from './components/search';
 import axios from 'axios';
 
-
 function App() {
   const [searchResults, setSearchResults] = useState([]);
+  const [selectedItems, setSelectedItems] = useState([]);
 
   const handleSearchResults = (searchTerm) => {
     axios
@@ -29,11 +30,37 @@ function App() {
       });
   };
 
+  const handleItemChecked = (item, isChecked) => {
+    if (isChecked) {
+      setSelectedItems([...selectedItems, item]);
+    } else {
+      setSelectedItems(selectedItems.filter((selectedItem) => selectedItem !== item));
+    }
+  };
+
+  const handleProcessSelectedItems = () => {
+    console.log("selected items:");
+    console.log(selectedItems);
+  }
+
   return (
     <div className="App">
 	  <Header />
     <Search onSearchResults={handleSearchResults} />
-	  <Playlists searchResults={searchResults} />
+	  <Playlists searchResults={searchResults} onItemChecked={handleItemChecked} />
+    <div className="selected-items">
+        <h3>Selected Items:</h3>
+        {selectedItems.map((item) => (
+          <div key={item.id.videoId}>
+            <p>Title: {item.snippet.title}</p>
+            <p>Channel: {item.snippet.channelTitle}</p>
+            <p>Description: {item.snippet.description}</p>
+          </div>
+        ))}
+        {selectedItems.length > 0 && (
+          <button onClick={handleProcessSelectedItems} className='btn'>Process Selected Items</button>
+        )}
+      </div>
 	  <Footer />
     </div>
   );
